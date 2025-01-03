@@ -1,0 +1,25 @@
+[
+  {
+    "name": "web",
+    "source_endpoint": "/{path:(.*)}",
+    "target_endpoint": "/app/{path}",
+    "target": "client",
+    "method": "GET",
+    "throttling": {
+      "overall": {},
+      "ip": {}
+    }
+  },
+  {
+    "name": "Login Redirect",
+    "source_endpoint": "/app/index.html",
+    "target_endpoint": "/app/index.html",
+    "target": "client",
+    "method": "GET",
+    "throttling": {
+      "overall": {},
+      "ip": {}
+    },
+    "system": true
+  }
+]

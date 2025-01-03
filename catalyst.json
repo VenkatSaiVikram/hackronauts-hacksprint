@@ -1,8 +1,9 @@
 {
-  "appsail": [
-    {
-      "source": "/Users/venkat-22065/DevSpace/hackronauts-hacksprint/appsail/term-track-main",
-      "name": "term-track-main"
-    }
-  ]
+  "client": {
+    "source": "client"
+  },
+  "apig": {
+    "rules": "catalyst-user-rules.json",
+    "enabled": true
+  }
 }

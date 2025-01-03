@@ -1,8 +1,0 @@
-{
-	"command": "python3 -u server/main.py",
-	"build_path": "/Users/venkat-22065/DevSpace/term-track/appsail/term-track-main",
-	"stack": "python_3_9",
-	"env_variables": {},
-	"memory": 256,
-	"scripts": {}
-}

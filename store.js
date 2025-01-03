@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
 import { ref } from "vue";
-import { ConfigHolder } from "../utils/config-holder";
+import { ConfigHolder } from "./utils/config-holder";
 
 
 const useStore = defineStore("store", () => {

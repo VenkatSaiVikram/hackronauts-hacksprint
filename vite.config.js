@@ -15,20 +15,21 @@ export default defineConfig({
         {
             name: "post-build",
             closeBundle() {
-                const outputDir = resolve(__dirname, "../static");
-                const indexPath = resolve(outputDir, "index.html");
-                const tplPath = resolve(outputDir, "index.tpl");
+                const outputDir = resolve(__dirname, "client");
+                const packageJsonPath = resolve(outputDir, "client-package.json");
 
-                let indexContent = readFileSync(indexPath, "utf-8");
-                const scriptTag = "<script>window.__config__={{config}}</script></body>";
-                indexContent = indexContent.replace("</body>", scriptTag);
+                const packageJsonContent = {
+                    name: "term-track",
+                    version: "0.0.1",
+                    homepage: "index.html"
+                };
 
-                writeFileSync(tplPath, indexContent);
+                writeFileSync(packageJsonPath, JSON.stringify(packageJsonContent, null, 4));
             },
         },
     ],
     build: {
-        outDir: "../static",
+        outDir: "./client",
         emptyOutDir: true,
         rollupOptions: {
             output: {
