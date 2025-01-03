@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "24883000000008170",
+      "name": "term-track",
+      "domain": {
+        "id": "10093740332",
+        "name": "term-track-875010115.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "875010115",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}
