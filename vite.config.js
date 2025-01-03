@@ -30,7 +30,7 @@ export default defineConfig({
     ],
     build: {
         outDir: "./client",
-        emptyOutDir: true,
+        // emptyOutDir: true,
         rollupOptions: {
             output: {
                 chunkFileNames: "js/[name].[hash].js",
